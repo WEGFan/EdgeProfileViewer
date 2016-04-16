@@ -21,6 +21,8 @@ namespace EdgeProfileViewer
             rank_text = { "D", "C", "B", "A", "S", "S+" };
         public object level_name, splus_time, s_time, a_time, b_time, c_time, level_prisms;
 
+
+
         public void ReadProfile()
         {
             try
@@ -379,6 +381,10 @@ namespace EdgeProfileViewer
             Password.Visible = ShowPassword.Checked;
         }
 
+        private void HowToFindProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://mygod.tk/misc/edgefans-archive/edgefans.tk/edge/profile-location.html");
+        }
     }
 
 }

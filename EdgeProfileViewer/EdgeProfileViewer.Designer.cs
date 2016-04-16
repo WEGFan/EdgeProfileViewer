@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             this.OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.btnLoadProfile = new System.Windows.Forms.Button();
             this.Music = new System.Windows.Forms.CheckBox();
@@ -70,6 +70,7 @@
             this.Control = new System.Windows.Forms.Label();
             this.ShowPassword = new System.Windows.Forms.CheckBox();
             this.Password = new System.Windows.Forms.Label();
+            this.HowToFindProfile = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.LevelData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,14 +169,14 @@
             this.PrismsCollected,
             this.Rank,
             this.RankIndex});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.LevelData.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.LevelData.DefaultCellStyle = dataGridViewCellStyle18;
             this.LevelData.Location = new System.Drawing.Point(12, 72);
             this.LevelData.Name = "LevelData";
             this.LevelData.ReadOnly = true;
@@ -211,8 +212,8 @@
             // 
             // Time
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Time.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Time.DefaultCellStyle = dataGridViewCellStyle10;
             this.Time.FillWeight = 80F;
             this.Time.HeaderText = "时间";
             this.Time.Name = "Time";
@@ -220,8 +221,8 @@
             // 
             // SPlusTime
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.SPlusTime.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.SPlusTime.DefaultCellStyle = dataGridViewCellStyle11;
             this.SPlusTime.FillWeight = 60F;
             this.SPlusTime.HeaderText = "S+ 标准";
             this.SPlusTime.Name = "SPlusTime";
@@ -229,8 +230,8 @@
             // 
             // STime
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.STime.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.STime.DefaultCellStyle = dataGridViewCellStyle12;
             this.STime.FillWeight = 60F;
             this.STime.HeaderText = "S 标准";
             this.STime.Name = "STime";
@@ -238,8 +239,8 @@
             // 
             // ATime
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.ATime.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.ATime.DefaultCellStyle = dataGridViewCellStyle13;
             this.ATime.FillWeight = 60F;
             this.ATime.HeaderText = "A 标准";
             this.ATime.Name = "ATime";
@@ -247,8 +248,8 @@
             // 
             // BTime
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.BTime.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.BTime.DefaultCellStyle = dataGridViewCellStyle14;
             this.BTime.FillWeight = 60F;
             this.BTime.HeaderText = "B 标准";
             this.BTime.Name = "BTime";
@@ -256,8 +257,8 @@
             // 
             // CTime
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.CTime.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.CTime.DefaultCellStyle = dataGridViewCellStyle15;
             this.CTime.FillWeight = 60F;
             this.CTime.HeaderText = "C 标准";
             this.CTime.Name = "CTime";
@@ -265,9 +266,9 @@
             // 
             // Prisms
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.NullValue = null;
-            this.Prisms.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.NullValue = null;
+            this.Prisms.DefaultCellStyle = dataGridViewCellStyle16;
             this.Prisms.FillWeight = 60F;
             this.Prisms.HeaderText = "棱柱数";
             this.Prisms.Name = "Prisms";
@@ -282,8 +283,8 @@
             // 
             // Rank
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Rank.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Rank.DefaultCellStyle = dataGridViewCellStyle17;
             this.Rank.FillWeight = 50F;
             this.Rank.HeaderText = "等级";
             this.Rank.Name = "Rank";
@@ -417,12 +418,26 @@
             this.Password.TabIndex = 14;
             this.Password.Visible = false;
             // 
+            // HowToFindProfile
+            // 
+            this.HowToFindProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.HowToFindProfile.AutoSize = true;
+            this.HowToFindProfile.LinkArea = new System.Windows.Forms.LinkArea(0, 11);
+            this.HowToFindProfile.Location = new System.Drawing.Point(682, 440);
+            this.HowToFindProfile.Name = "HowToFindProfile";
+            this.HowToFindProfile.Size = new System.Drawing.Size(137, 12);
+            this.HowToFindProfile.TabIndex = 19;
+            this.HowToFindProfile.TabStop = true;
+            this.HowToFindProfile.Text = "如何找到我的存档在哪？";
+            this.HowToFindProfile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.HowToFindProfile_LinkClicked);
+            // 
             // EdgeProfileViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(834, 461);
+            this.Controls.Add(this.HowToFindProfile);
             this.Controls.Add(this.lbEnterProfilePath);
             this.Controls.Add(this.ProfilePath);
             this.Controls.Add(this.btnLoadProfile);
@@ -487,7 +502,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PrismsCollected;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rank;
         private System.Windows.Forms.DataGridViewTextBoxColumn RankIndex;
-
+        private System.Windows.Forms.LinkLabel HowToFindProfile;
     }
 }
 
