@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -71,7 +72,10 @@
             this.ShowPassword = new System.Windows.Forms.CheckBox();
             this.Password = new System.Windows.Forms.Label();
             this.HowToFindProfile = new System.Windows.Forms.LinkLabel();
+            this.LevelDataMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ViewLeaderboard = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.LevelData)).BeginInit();
+            this.LevelDataMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // OpenFileDialog
@@ -183,6 +187,7 @@
             this.LevelData.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.LevelData.RowHeadersWidth = 10;
             this.LevelData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.LevelData.RowTemplate.ContextMenuStrip = this.LevelDataMenu;
             this.LevelData.RowTemplate.Height = 18;
             this.LevelData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.LevelData.Size = new System.Drawing.Size(810, 335);
@@ -431,6 +436,21 @@
             this.HowToFindProfile.Text = "如何找到我的存档在哪？";
             this.HowToFindProfile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.HowToFindProfile_LinkClicked);
             // 
+            // LevelDataMenu
+            // 
+            this.LevelDataMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ViewLeaderboard});
+            this.LevelDataMenu.Name = "LevelDataMenu";
+            this.LevelDataMenu.Size = new System.Drawing.Size(208, 26);
+            // 
+            // ViewLeaderboard
+            // 
+            this.ViewLeaderboard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ViewLeaderboard.Name = "ViewLeaderboard";
+            this.ViewLeaderboard.Size = new System.Drawing.Size(207, 22);
+            this.ViewLeaderboard.Text = "查看 mobigame 排行榜";
+            this.ViewLeaderboard.Click += new System.EventHandler(this.ViewLeaderboard_Click);
+            // 
             // EdgeProfileViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -460,8 +480,9 @@
             this.DoubleBuffered = true;
             this.MinimumSize = new System.Drawing.Size(850, 300);
             this.Name = "EdgeProfileViewer";
-            this.Text = "Edge手机版存档读取器 V1.0";
+            this.Text = "Edge手机版存档读取器 V1.1";
             ((System.ComponentModel.ISupportInitialize)(this.LevelData)).EndInit();
+            this.LevelDataMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -503,6 +524,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Rank;
         private System.Windows.Forms.DataGridViewTextBoxColumn RankIndex;
         private System.Windows.Forms.LinkLabel HowToFindProfile;
+        private System.Windows.Forms.ContextMenuStrip LevelDataMenu;
+        private System.Windows.Forms.ToolStripMenuItem ViewLeaderboard;
     }
 }
 

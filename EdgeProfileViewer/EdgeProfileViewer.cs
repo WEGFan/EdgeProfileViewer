@@ -21,8 +21,6 @@ namespace EdgeProfileViewer
             rank_text = { "D", "C", "B", "A", "S", "S+" };
         public object level_name, splus_time, s_time, a_time, b_time, c_time, level_prisms;
 
-
-
         public void ReadProfile()
         {
             try
@@ -291,8 +289,6 @@ namespace EdgeProfileViewer
             level_list.Add(566, new object[] { "piano", "56\"", "1' 34\"", "2' 11\"", "2' 49\"", "3' 26\"", 14 });
             level_list.Add(573, new object[] { "star heart", "1' 43\"", "2' 40\"", "3' 37\"", "4' 34\"", "5' 31\"", 16 });
 
-            // TODO: add more levels
-
             return level_list;
         }
 
@@ -384,6 +380,17 @@ namespace EdgeProfileViewer
         private void HowToFindProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://mygod.tk/misc/edgefans-archive/edgefans.tk/edge/profile-location.html");
+        }
+
+        private void ViewLeaderboard_Click(object sender, EventArgs e)
+        {
+            int sid;
+            if (LevelData.CurrentRow.Cells["Number"].Value.ToString()[0] == 'N')
+                sid = 1;
+            else
+                sid = 9;
+            Process.Start("http://www.mobigame.net/index.php?id=1&sid=" + sid + "&action=1&lid=" +
+                LevelData.CurrentRow.Cells["ID"].Value);
         }
     }
 
